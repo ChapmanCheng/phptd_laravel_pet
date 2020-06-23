@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/dogs', function () {
-    return view('dogs');
-});
-
-Route::get('/cats', function () {
-    return view('cats');
-});
+Route::get('/', "WebsiteController@index");
+Route::get('/dogs', "WebsiteController@dogs");
+Route::get('/cats', "WebsiteController@cats");
