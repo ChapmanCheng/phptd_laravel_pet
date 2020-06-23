@@ -6,16 +6,15 @@
         </a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active" style="color: hotpink;">
+                <li class="nav-item @if(Request::is('/'))active @endif">
                     <a class="nav-link" href="/"><b>Home</b></a>
                 </li>
-                <li class="nav-item" style="color: hotpink;">
-                    <a class="nav-link" href="/cats.html"><b>Cats</b></a>
+                <li class="nav-item @if(Request::is('cats'))active @endif">
+                    <a class="nav-link" href="/cats"><b>Cats</b></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/dogs.html"><b>Dogs</b></a>
+                <li class="nav-item @if(Request::is('dogs'))active @endif">
+                    <a class="nav-link" href="/dogs"><b>Dogs</b></a>
                 </li>
-
             </ul>
             <ul class="navbar-nav float-right">
                 <li class="nav-item">

@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', ['active' => 'home']);
 });
 
 Route::get('/cats', function () {
     // ! cats comes first
-    return view('cats');
+    return view('cats', ['active' => 'cats']);
 });
 
 Route::get('/dogs', function () {
-    return view('dogs');
+    return view('dogs', ['active' => 'dogs']);
 });
