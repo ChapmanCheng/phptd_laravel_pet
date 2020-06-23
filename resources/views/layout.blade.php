@@ -6,7 +6,8 @@
 <body style="background-color: #4d4d4d !important">
     @include ('nav')
     <main role="main" class="container">
-        @yield('contents')
+        @yield('featured')
+        @yield('cards')
     </main>
     @include('footer')
     @include('js')

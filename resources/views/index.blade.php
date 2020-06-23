@@ -1,6 +1,6 @@
-@extends('base')
+@extends('layout')
 
-@section('contents')
+@section('featured')
 <div class="row mb-5">
     <div class="col-12">
         <div class="card bg-dark">
@@ -10,7 +10,10 @@
             </div>
         </div>
     </div>
-</div> <!-- end row -->
+</div>
+@endsection
+
+@section('cards')
 <div class="row mb-4">
     <div class="col-lg-4 mb-4">
         <div class="card bg-dark">
