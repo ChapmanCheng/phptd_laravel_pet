@@ -19,9 +19,9 @@ Route::get('/', function () {
 
 Route::get('/cats', function () {
     // ! cats comes first
-    return view('welcome');
+    return view('cats');
 });
 
 Route::get('/dogs', function () {
-    return view('welcome');
+    return view('dogs');
 });
